@@ -1,0 +1,125 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* נתיב לתמונת הרקע */
+    background-size: cover; /* כיסוי מלא של המסך */
+    background-repeat: no-repeat; /* ללא חזרה על התמונה */
+    background-attachment: fixed; /* רקע קבוע בעת גלילה */
+    background-position: center; /* מיקום במרכז */
+    font-family: Arial, sans-serif; /* גופן כללי */
+    margin: 0; /* ללא מרווח ברירת מחדל */
+    padding: 0; /* ללא ריפוד ברירת מחדל */
+}
+.pacifico-regular{ /*העיצוב של הכותרת עם פונט */
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    text-align: center;
+    color: #fffefe; /* צבע טקסט */
+    font-size: 56px; /* גודל גופן */
+    margin-top: 50px; /* מרווח עליון */
+    text-shadow: 5px 5px 5px rgba(70, 70, 70, 0.5); /* צל על טקסט */
+    -webkit-text-stroke: 2px black; /* פס שחור סביב לכל אות */
+    
+
+}
+
+/*עיצוב של כפתור העגלה*/
+.header-container {
+    display: flex; /* מציג את התוכן בתוך flex */
+    justify-content: flex-end; /* מיישר את הכפתור לימין */
+    align-items: center; /* ממרכז את התוכן לאורך הציר האנכי */
+    margin-bottom: 10px; /* מוסיף רווח מתחת לכותרת */
+    padding-right: 7%; /* ממקם את הכפתור שלוש רבעי מהסוף של השורה */
+    padding-top: 1%;
+}
+.cart-button {
+    color: #ffffff; /* צבע טקסט */
+    border: 2px solid #000000; /* מסגרת בצבע כחול */
+    padding: 5px 10px; /* החזרה לרוחב וגובה המקורי של הכפתור */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* סמן העכבר משתנה ליד */
+    font-size: 16px; /* חזרה לגודל הפונט המקורי */
+    margin-right: 10px; /* הזזה מעט לימין */
+    display: inline-flex; /* מציג את הכפתור כ-inline-flex */
+    align-items: center; /* ממרכז את התוכן בתוך הכפתור לאורך ציר האנכי */
+    background-color: transparent; /* רקע שקוף */
+}
+
+.cart-button i {
+    margin-right: 5px; /* מרווח מצד ימין של האייקון */
+}
+
+.cart-button:hover {
+    background-color: #000000; /* צבע רקע של הכפתור במצב רחיפה (hover) */
+    color: white; /* צבע טקסט לבן במצב רחיפה */
+    border: 2px solid #ffffff; /* מסגרת בצבע כחול */
+}
+
+
+
+
+
+.image-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.image-item {
+    text-align: center; /* יישור הטקסט במרכז */
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* שלוש עמודות */
+}
+
+.image-container img {
+    height: 350px;
+    width: 350px; /* התאמת רוחב התמונה לגודל העמודה */
+    margin-bottom: 10px; /* מרווח בין השורות */
+}
+
+#iphoneButton {/* זה של הכפתור שמציג את הפרטים על כל מוצר  */
+    font-family: "Cinzel", serif;
+    background-color: #000000; /* צבע רקע */
+    color: white; /* צבע טקסט */
+    border: none; /* ללא גבול */
+    padding: 15px 32px; /* ריווח פנימי */
+    text-align: center; /* יישור טקסט */
+    text-decoration: none; /* ללא קו תחתי */
+    display: inline-block; /* תצוגה פנימית */
+    font-size: 16px; /* גודל גופן */
+    margin: 4px 2px; /* מרווחים */
+    cursor: pointer; /* סמן עכבר ככפתור */
+    border-radius: 12px; /* קצוות מעוגלים */
+    transition-duration: 0.4s; /* זמן מעבר לאפקטים */
+}
+#iphoneButton:hover {
+    background-color: white; /* צבע רקע כשמרחפים */
+    color: #000000; /* צבע טקסט כשמרחפים */
+    border: 2px solid #ffffff; /* גבול כשמרחפים */
+}
+
+.image-item { /* זה של התג מחיר שנימצא ליד התמונה */
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.price-tag {
+    font-family: "Cinzel", serif;
+    cursor: default;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+.price-tag:hover { /*זה ההמשך ש הקוד של התג כולל מה שיש בין לבין */
+    background-color: black;
+    color: white;
+}

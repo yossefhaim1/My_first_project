@@ -1,0 +1,55 @@
+body {
+    margin: 0; /* מבטל את השוליים המובנים של הדפדפן */
+    padding: 0; /* מבטל את הריפוד המובנה של הדפדפן */
+    font-family: Arial, sans-serif; /* מגדיר את הגופן הכללי של הטקסט */
+    height: 100vh; /* גובה של 100% מחלון הצפייה */
+    display: flex; /* שימוש ב-Flexbox כדי לסדר את האלמנטים */
+    justify-content: center; /* יישור מרכזי אופקי */
+    align-items: center; /* יישור מרכזי אנכי */
+    background-image: url('https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* תמונת רקע */
+    background-size: cover; /* התמונה מכסה את כל המסך */
+    background-repeat: no-repeat; /* התמונה לא חוזרת על עצמה */
+    background-attachment: fixed; /* התמונה קבועה בעת גלילה */
+    background-position: center; /* התמונה במרכז */
+}
+
+.payment-form {
+    background-color: rgba(255, 255, 255, 0.8); /* רקע לבן עם שקיפות קלה */
+    padding: 20px; /* ריפוד פנימי של 20 פיקסלים */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* צל מסביב */
+    width: 400px; /* רוחב קבוע של 300 פיקסלים */
+    direction: rtl; /* יישור הטקסט לשמאל לימין */
+    text-align: right; /* יישור טקסט לימין */
+}
+
+.form-group {
+    margin-bottom: 15px; /* מרווח תחתון של 15 פיקסלים בין קבוצות השדות */
+}
+
+.form-group label {
+    display: block; /* הצגת התווית כבלוק */
+    margin-bottom: 5px; /* מרווח תחתון של 5 פיקסלים בין התווית לשדה הקלט */
+}
+
+.form-group input {
+    width: 100%; /* רוחב מלא של השדה */
+    padding: 8px; /* ריפוד פנימי של 8 פיקסלים */
+    box-sizing: border-box; /* כולל את הריפוד והרוחב במסגרת רוחב האלמנט */
+}
+
+button {
+    width: 100%; /* רוחב מלא של הכפתור */
+    padding: 10px; /* ריפוד פנימי של 10 פיקסלים */
+    background-color: #000000; /* צבע רקע כחול */
+    color: white; /* צבע טקסט לבן */
+    border: none; /* ללא גבול */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* מצביע העכבר משתנה ליד בעת ריחוף */
+    font-size: 16px; /* גודל גופן של 16 פיקסלים */
+}
+
+button:hover {
+    background-color: #4a4848; /* צבע רקע כהה יותר בעת ריחוף */
+    color: rgb(255, 255, 255); /* צבע טקסט לבן */
+}
